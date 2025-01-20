@@ -1,21 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Custom dots container styles */
-.custom-dots-container {
-  position: absolute;
-  top: 50%; /* Position them vertically centered */
-  left: 100%; /* Position them to the right of the carousel */
-  transform: translateY(-50%); /* Adjusts for perfect vertical centering */
-  display: flex; /* Align dots horizontally */
-  justify-content: flex-start; /* Ensure the dots align side by side */
-  margin: 0;
-  padding: 0;
-  flex-direction: row; /* Arrange the dots in a row horizontally */
-  background-color: rgba(255, 255, 255, 0.502);
-}
-
-/* Style each individual dot */
-.custom-dots-container div {
-  margin: 0 5px; /* Adjust the space between each dot */
-}
