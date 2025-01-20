@@ -8,7 +8,7 @@ function Cart() {
   return (
     <Link
       to={`/properties/1`}
-      className="block  w-[300px] md:w-[354px]  xl:w-[365px]"
+      className="block  w-[300px] md:w-[354px] lg:w-[314px]  xl:w-[324px]"
     >
       <div className="w-full h-[300px]  rounded-md overflow-hidden">
         <Carsoul>
