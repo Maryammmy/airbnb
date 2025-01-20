@@ -19,7 +19,7 @@ export default function Modal({
       <Dialog
         open={isOpen}
         as="div"
-        className="relative z-10 focus:outline-none"
+        className="relative z-50 focus:outline-none"
         onClose={close}
         __demoMode
       >

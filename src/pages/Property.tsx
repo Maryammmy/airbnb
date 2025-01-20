@@ -36,7 +36,7 @@ function Property() {
           ))}
         </div>
       </div>
-      <div className="py-8 flex flex-col md:flex-row gap-10 xl:gap-20 md:justify-between">
+      <div className="py-8 flex flex-col lg:flex-row gap-10 xl:gap-20 md:justify-between">
         <div className="flex-[2]">
           <div className="pb-5">
             <p className="font-medium text-black text-2xl">

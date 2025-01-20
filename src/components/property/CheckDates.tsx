@@ -8,7 +8,7 @@ function CheckDates() {
           Add dates for prices
         </h2>
         <div className="border border-stone-300 rounded-lg flex flex-col">
-          <div className="flex gap-10 border-b border-stone-300 text-sm">
+          <div className="flex gap-10 xl:gap-20 border-b border-stone-300 text-sm">
             <div className="ps-3 py-1">
               <h3 className="text-black font-bold">CHECK-IN</h3>
               <p className="text-secondary font-medium">Add date</p>

@@ -2,16 +2,15 @@ import { Link } from "react-router-dom";
 import Carsoul from "./ui/Carsoul";
 import Image from "./ui/Image";
 import { images } from "../data";
-import { Star } from "lucide-react";
-
+import { FaStar } from "react-icons/fa6";
 function Cart() {
   return (
     <Link
       to={`/properties/1`}
-      className="block  w-[300px] md:w-[354px] lg:w-[314px]  xl:w-[324px]"
+      className="block  w-[300px] md:w-[354px] lg:w-[314px] xl:w-[305px] 2xl:w-[365px]"
     >
       <div className="w-full h-[300px]  rounded-md overflow-hidden">
-        <Carsoul>
+        <Carsoul showDot={true}>
           {images?.map((item: string, index: number) => (
             <Image
               key={index}
@@ -26,7 +25,7 @@ function Cart() {
         <div className="flex items-center justify-between pt-2">
           <h3 className=" font-bold">Villa Bird</h3>
           <p className="flex gap-1 items-center font-medium">
-            <Star size={15} className="" />
+            <FaStar size={15} />
             <span>5.0</span>
           </p>
         </div>

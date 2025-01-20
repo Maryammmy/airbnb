@@ -6,3 +6,9 @@ export interface IButton {
   id: number;
   label: string;
 }
+export interface ResponsiveSetting {
+  breakpoint: number;
+  settings: {
+    slidesToShow: number;
+  };
+}
