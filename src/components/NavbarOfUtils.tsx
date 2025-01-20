@@ -8,7 +8,7 @@ function NavbarOfUtils() {
   const { shadow } = useContext(NavbarContext);
   return (
     <div
-      className={`sticky flex gap-5 sm:gap-12 top-0 z-20 right-0 left-0 w-full items-center bg-white px-5  xl:px-20 py-5 justify-between text-[#49454F] font-medium text-[12px] activityBtn transition-shadow ${
+      className={`sticky flex gap-5 sm:gap-12 top-0 z-10 right-0 left-0 w-full items-center bg-white px-5  xl:px-20 py-5 justify-between text-[#49454F] font-medium text-[12px] activityBtn transition-shadow ${
         shadow ? "shadow-lg" : ""
       } overflow-x-auto xl:overflow-x-hidden md:flex-nowrap md:whitespace-nowrap`}
     >

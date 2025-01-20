@@ -5,8 +5,15 @@ interface IProps {
   close: () => void;
   title?: string;
   children: ReactNode;
+  className?: string;
 }
-export default function Modal({ isOpen, close, title, children }: IProps) {
+export default function Modal({
+  isOpen,
+  close,
+  title,
+  children,
+  className,
+}: IProps) {
   return (
     <>
       <Dialog
@@ -16,14 +23,14 @@ export default function Modal({ isOpen, close, title, children }: IProps) {
         onClose={close}
         __demoMode
       >
-        <div className="fixed backdrop-blur-sm inset-0 z-10 w-screen overflow-y-auto">
+        <div className="fixed backdrop-blur-sm inset-0 z-50 w-screen overflow-y-auto">
           <div className="flex min-h-full items-center justify-center md:p-4">
             <DialogPanel
               transition
-              className="w-full max-w-md rounded-xl shadow-lg  bg-white p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
+              className="w-full max-w-md rounded-xl shadow-lg  bg-white  backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
             >
               {title && (
-                <DialogTitle as="h3" className="text-xl font-medium">
+                <DialogTitle as="h3" className={className}>
                   {title}
                 </DialogTitle>
               )}

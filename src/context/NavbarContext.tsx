@@ -3,12 +3,17 @@ import React, { createContext, useState, useEffect, ReactNode } from "react";
 interface NavbarContextType {
   shadow: boolean;
   setShadow: React.Dispatch<React.SetStateAction<boolean>>;
+  isDropdownOpen: boolean;
+  setIsDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  isLoggedIn: boolean;
+  setIsLoggedIn: React.Dispatch<React.SetStateAction<boolean>>;
 }
 // eslint-disable-next-line react-refresh/only-export-components
 export const NavbarContext = createContext({} as NavbarContextType);
 const NavbarContextProvider = ({ children }: { children: ReactNode }) => {
   const [shadow, setShadow] = useState(false);
-
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -30,6 +35,10 @@ const NavbarContextProvider = ({ children }: { children: ReactNode }) => {
       value={{
         setShadow,
         shadow,
+        isDropdownOpen,
+        setIsDropdownOpen,
+        isLoggedIn,
+        setIsLoggedIn,
       }}
     >
       {children}
